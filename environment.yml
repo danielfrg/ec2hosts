@@ -1,0 +1,15 @@
+name: ec2hosts
+dependencies:
+  - python=3
+  - click
+  # Tests
+  - pylint
+  - pytest
+  - pip:
+    - boto3
+    # Utils
+    - yapf
+    - twine
+    - versioneer
+    # Tests
+    - pytest-cov

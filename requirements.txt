@@ -1,0 +1,5 @@
+boto3
+click>=6.0
+
+pytest>=2.7.2
+pytest-cov

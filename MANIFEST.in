@@ -1,0 +1,4 @@
+include LICENSE
+include requirements.txt
+include versioneer.py
+include ec2hosts/_version.py
