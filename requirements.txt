@@ -1,5 +1,10 @@
 boto3
 click>=6.0
 
+pylint
+yapf
+twine
+versioneer
+
 pytest>=2.7.2
 pytest-cov

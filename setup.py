@@ -3,9 +3,6 @@ import versioneer
 from distutils.core import setup
 from setuptools import find_packages
 
-with open("requirements.txt") as f:
-    required = f.read().splitlines()
-
 cmdclass = versioneer.get_cmdclass()
 
 setup(
@@ -16,7 +13,7 @@ setup(
     url="https://github.com/danielfrg/ec2hosts",
     cmdclass=cmdclass,
     license="Apache License Version 2.0, January 2004",
-    install_requires=required,
+    install_requires=["boto3", "click"],
     packages=find_packages(),
     entry_points="""
         [console_scripts]
