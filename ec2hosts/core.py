@@ -52,7 +52,8 @@ def gen_file():
     for instance in instances:
         private_dns_name = instance.private_dns_name
         private_hostname = instance.private_dns_name.split('.')[0]
-        content += "{}   {}  {}\n".format(instance.public_ip_address.ljust(15), private_dns_name, private_hostname)
+        if instance.public_ip_address:
+            content += "{}   {}  {}\n".format(instance.public_ip_address.ljust(15), private_dns_name, private_hostname)
     content += SUFFIX + "\n"
     return content
 
